@@ -19,9 +19,9 @@ class MainActivity : AppCompatActivity() {
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        if (FirebaseApp.getApps(this).isEmpty()) {
+       /* if (FirebaseApp.getApps(this).isEmpty()) {
             FirebaseApp.initializeApp(this)
-        }
+        }*/
 
         val navView: BottomNavigationView = binding.navView
 

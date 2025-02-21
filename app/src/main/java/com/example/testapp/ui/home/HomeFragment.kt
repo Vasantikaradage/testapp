@@ -1,4 +1,4 @@
-
+package com.example.testapp.ui.home
 import android.app.AlertDialog
 import android.app.DatePickerDialog
 import android.content.Intent
@@ -80,6 +80,8 @@ class HomeFragment : Fragment() {
         return root
     }
 
+
+
     private fun setupSearchView() {
         // Set query listener for the SearchView
         searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
@@ -143,7 +145,9 @@ class HomeFragment : Fragment() {
 
                 if (dobDate != null && dobDate.after(startDate) && dobDate.before(endDate)) {
                     filteredDataArrayList?.add(item)
+
                 }
+
             }
         } else {
             // If no date range is selected, fallback to default filtering or show all data

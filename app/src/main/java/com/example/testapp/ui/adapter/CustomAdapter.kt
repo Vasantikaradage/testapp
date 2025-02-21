@@ -1,5 +1,5 @@
 package com.example.testapp.ui.adapter
-import HomeFragment
+
 import android.content.Intent
 import android.util.Log
 import android.view.LayoutInflater
@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.testapp.AddActivity
 import com.example.testapp.R
 import com.example.testapp.ui.ItemsViewModel
+import com.example.testapp.ui.home.HomeFragment
 
 
 class CustomAdapter(private  val context: HomeFragment, private val mList: List<ItemsViewModel>) : RecyclerView.Adapter<CustomAdapter.ViewHolder>() {
